@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "df314bff-8978-43e7-b4bf-9c8b4c091209",
-		"name": "ejemplo-maven",
+		"_postman_id": "69f6bdfd-4837-4c02-9851-ea56ec150f3c",
+		"name": "ejemplo-maven Copy 2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "482477"
+		"_exporter_id": "24686357"
 	},
 	"item": [
 		{
@@ -72,13 +72,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
