@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                      
-                     sh 'newman run /home/postman_collection.json'
+                     sh 'newman run ./postman_collection.json'
                 }
             }
             }
@@ -62,7 +62,7 @@ pipeline {
             stage('Paso 5: Testear Artefacto con newman') {
                steps {
                 script {
-                    sh 'newman run /home/postman_collection.json'
+                    sh 'newman run ./postman_collection.json'
                 }
                 }
             }
