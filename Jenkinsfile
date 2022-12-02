@@ -24,6 +24,15 @@ pipeline {
                     }
                 }
             }
+
+            stage('Paso 3: Curl Springboot maven sleep 20') {
+                steps {
+                    script {
+                        sh 'nohup bash ./mvnw spring-boot:run  & >/dev/null'
+                    }
+                }
+            }
+
             stage('Paso 2: test newman maven') {
             steps {
                 script {
