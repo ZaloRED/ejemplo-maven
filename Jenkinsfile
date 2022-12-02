@@ -3,6 +3,7 @@ def jsonParse(def json) {
     new groovy.json.JsonSlurperClassic().parseText(json)
 }
 pipeline {
+    agent any
         stages {
             stage('Paso 0: Download Code and checkout') {
             steps {
