@@ -56,8 +56,8 @@ pipeline {
             stage('Paso 5: Levantar Artefacto Jar en server Jenkins') {
                 steps {
                     script {
-                        sh 'ls -ltra build/'
                         sh 'nohup java -jar build/DevOpsUsach2020-0.0.1.jar & >/dev/null'
+                        sh "sleep 20"
                     }
                 }
             }
